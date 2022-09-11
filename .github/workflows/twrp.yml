@@ -14,7 +14,10 @@ jobs:
       BRANCH: twrp-5.1
 
     steps:
+      
       - uses: actions/checkout@v2
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
 
       - name: Installing JDK 7 + Build Dependencies
         run: |
